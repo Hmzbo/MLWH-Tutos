@@ -1,0 +1,15 @@
+streamlit
+requests
+tqdm
+mistralai
+PyPDF2
+pydantic
+python-dotenv
+asyncio
+googlesearch-python
+langchain
+langchain-community
+google-ai-generativelanguage==0.6.15
+langchain-google-genai
+crawl4ai
+streamlit-float
