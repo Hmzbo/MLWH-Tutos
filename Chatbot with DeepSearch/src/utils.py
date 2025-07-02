@@ -49,12 +49,12 @@ def pdf_ocr(url, page_count=5):
     download_path = temp_directory / "original.pdf"
 
     # Download the PDF from URL
-    original_pdf_path = download_pdf(url, download_path)
+    download_pdf(url, download_path)
 
     # Construct the full path for the output PDF file
     shortened_pdf_path = temp_directory / "shortened.pdf"
 
-    extract_pages(original_pdf_path, shortened_pdf_path, page_count=page_count)
+    extract_pages(download_path, shortened_pdf_path, page_count=page_count)
 
     # Getting the base64 string
     base64_pdf = encode_pdf(shortened_pdf_path)
